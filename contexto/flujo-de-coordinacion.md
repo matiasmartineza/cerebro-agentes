@@ -41,3 +41,6 @@ Elección de modelo y razonamiento:
 - Si no está claro cuál usar, Mog le pregunta a Matías antes de enviar la tarea.
 
 La sesión nueva no ve conversaciones anteriores, así que la tarea debe ser autocontenida. Al terminar, el aviso automático llega a #agentes, como siempre.
+## Tareas para Codex: desde la app
+
+Desde el 2026-11-19, Mog no lanza Codex por terminal. Las sesiones nuevas se crean en la app de escritorio (ChatGPT/Codex). Mog abre un chat nuevo, entra en la pestaña «Work», elige el proyecto, que fija la carpeta, revisa el modelo y el razonamiento, y pega la tarea autocontenida. Para continuar un trabajo, escribe en el chat que ya existe. Así cada sesión queda visible en la app. El proyecto «cerebro-agentes» ya está creado.
