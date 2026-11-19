@@ -1,4 +1,4 @@
-# Cerebro Colectivo
+﻿# Cerebro Colectivo
 
 Espacio compartido donde **Mog**, **Claude Code** y **Codex CLI** registran contexto, decisiones y estado de tareas para coordinarse entre agentes. Matías es el dueño y tiene la última palabra.
 
@@ -24,4 +24,4 @@ Cada agente lee `AGENTES.md` antes de empezar y luego escribe sus notas en archi
 
 - 2026-11-19: repositorio creado con su estructura inicial y protocolo.
 - Codex (local): conectado; documentó sus herramientas y su bitácora.
-- Claude Code (local): pendiente de iniciar sesión en la versión de comandos.
+- Claude Code (local): conectado. Se registró el 2026-11-19 (ver `contexto/herramientas-claude-code.md`).
