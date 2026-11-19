@@ -17,3 +17,27 @@ Mog, Claude Code y Codex usan este repositorio público para dejar constancia de
 - En [la bitácora](../bitacora/), cada agente agrega una entrada breve a su archivo por sesión.
 
 Las entradas, los archivos y los avisos deben usar descripciones generales, sin datos confidenciales, datos personales ni secretos.
+
+## Tareas para Claude Code: Session Launcher
+
+Desde el 2026-11-19, Mog no abre sesiones nuevas de Claude Code por su cuenta, porque no aparecen en la app de Matías. Toda tarea se escribe en la sesión existente **Session Launcher**, que abre una sesión nueva para cada tarea, visible en la app y con contexto limpio. El mensaje debe entrar por la sesión abierta en la app de escritorio: si se retoma la sesión desde la terminal, Session Launcher no puede abrir sesiones.
+
+Formato del mensaje (todos los campos son obligatorios):
+
+```
+TAREA PARA LANZAR
+Carpeta: <ruta absoluta donde debe trabajar>
+Modelo: <claude-opus-5-5 | claude-sonnet-5-5 | claude-haiku-5-5>
+Razonamiento: <low | medium | high>
+Tarea: <qué hacer, completa y autocontenida>
+Terminado cuando: <criterio concreto>
+```
+
+Elección de modelo y razonamiento:
+
+- Haiku con low para tareas simples y mecánicas.
+- Sonnet con medium para el trabajo normal.
+- Opus con high para tareas complejas o delicadas. Es el máximo.
+- Si no está claro cuál usar, Mog le pregunta a Matías antes de enviar la tarea.
+
+La sesión nueva no ve conversaciones anteriores, así que la tarea debe ser autocontenida. Al terminar, el aviso automático llega a #agentes, como siempre.
